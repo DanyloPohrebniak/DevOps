@@ -1,0 +1,12 @@
+INFO:__main__:Started
+INFO:root:0 is an even number
+WARNING:root:1 is an odd number
+INFO:root:2 is an even number
+WARNING:root:3 is an odd number
+INFO:root:4 is an even number
+WARNING:root:5 is an odd number
+INFO:root:6 is an even number
+WARNING:root:7 is an odd number
+INFO:root:8 is an even number
+WARNING:root:9 is an odd number
+INFO:__main__:Finished
