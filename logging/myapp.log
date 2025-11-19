@@ -1,12 +1,12 @@
-INFO:__main__:Started
-INFO:root:0 is an even number
-WARNING:root:1 is an odd number
-INFO:root:2 is an even number
-WARNING:root:3 is an odd number
-INFO:root:4 is an even number
-WARNING:root:5 is an odd number
-INFO:root:6 is an even number
-WARNING:root:7 is an odd number
-INFO:root:8 is an even number
-WARNING:root:9 is an odd number
-INFO:__main__:Finished
+2025-11-19 12:55:30,851 [INFO] __main__: 11 - Started
+2025-11-19 12:55:30,851 [ERROR] root: 7 - 0 is a zero
+2025-11-19 12:55:30,851 [WARNING] root: 11 - 1 is an odd number
+2025-11-19 12:55:30,851 [INFO] root: 9 - 2 is an even number
+2025-11-19 12:55:30,851 [WARNING] root: 11 - 3 is an odd number
+2025-11-19 12:55:30,851 [INFO] root: 9 - 4 is an even number
+2025-11-19 12:55:30,851 [WARNING] root: 11 - 5 is an odd number
+2025-11-19 12:55:30,851 [INFO] root: 9 - 6 is an even number
+2025-11-19 12:55:30,852 [WARNING] root: 11 - 7 is an odd number
+2025-11-19 12:55:30,852 [INFO] root: 9 - 8 is an even number
+2025-11-19 12:55:30,852 [WARNING] root: 11 - 9 is an odd number
+2025-11-19 12:55:30,852 [INFO] __main__: 13 - Finished
