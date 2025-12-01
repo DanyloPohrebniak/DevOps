@@ -28,11 +28,15 @@ jobs:
       # 4. Pydoc documentation generating
       - name: Generate docs with pydoc
         run: |
+          set -e
           mkdir -p docs
-          for f in *.py; do
-            pydoc -w "${f%.*}"
+          for f in $(git ls-files '*.py'); do
+            module=${f%.py}
+            module=${module//\//.}
+            echo Generating docs for "$module"
+            python -m pydoc -w "$module"
           done
-          mv *.html docs/
+          mv ./*.html docs/
 
       # 5. To see html after run
       - name: Upload pydoc HTML
