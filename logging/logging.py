@@ -5,7 +5,7 @@ import simple_app
 logger = logging.getLogger(__name__)
 
 def main():
-    """Handle user login"""
+    """Handle user logging"""
     logging.basicConfig(filename='./DevOps/logging/myapp.log', level=logging.INFO, format='%(asctime)s [%(levelname)s] %(name)s: %(lineno)d - %(message)s', filemode='w')
     logger.info('Started')
     simple_app.do_something()
