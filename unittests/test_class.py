@@ -1,7 +1,7 @@
 """Class for unnittests"""
 
-class TestClass():
-    """Class for unittests"""
+class TestClass:
+    """Class with methods for unittests"""
 
     @staticmethod
     def simple_function(input_str):
@@ -11,7 +11,7 @@ class TestClass():
                 return f'hello {input_str.title()}'
             return f"{input_str.title()} isn't a name"
         return f"{input_str} doesn't fit requirements"
-    
+
     @staticmethod
     def second_function(number):
         """Function for test2.py"""
@@ -20,3 +20,4 @@ class TestClass():
         if number < 0:
             return "Negative"
         return "Zero"
+    

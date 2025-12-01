@@ -14,3 +14,4 @@ def do_something():
             logging.warning("%s is an odd number", i)
         else:
             logging.critical("%s isn`t a number", i)
+            
