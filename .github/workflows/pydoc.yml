@@ -9,14 +9,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Loading repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Python environment
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      # 3. Do not fail if pylint under 5
+      - name: Run pylint
+        run: |
+          pip install pylint
+          pylint --fail-under=5 $(git ls-files '*.py') || true
+
+      # 4. Pydoc documentation generating
       - name: Generate docs with pydoc
         run: |
           mkdir -p docs
@@ -24,3 +33,10 @@ jobs:
             pydoc -w "${f%.*}"
           done
           mv *.html docs/
+
+      # 5. To see html after run
+      - name: Upload pydoc HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: pydoc-html
+          path: docs/

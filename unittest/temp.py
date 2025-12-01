@@ -4,5 +4,4 @@ def simple_function(input_str):
             return f'hello {input_str.title()}'
         else:
             return f"{input_str.title()} isn't a name"
-    else:
-        return f"{input_str} doesn't fit requirements"
+    return f"{input_str} doesn't fit requirements"
