@@ -29,8 +29,9 @@ jobs:
       - name: Generate docs with pydoc
         run: |
           mkdir -p docs
-          for f in *.py; do
-            pydoc -w "${f%.*}"
+          for f in $(git ls-files '*.py'); do
+            pydoc -w "${f%.py}
+            module="${module//\//.}"
           done
           mv *.html docs/
 
