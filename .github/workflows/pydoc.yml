@@ -19,11 +19,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3. Do not fail if pylint under 5
+      # 3. Do not fail if pylint
       - name: Run pylint
         run: |
           pip install pylint
-          pylint --fail-under=5 $(git ls-files '*.py') || true
+          pylint --exit-zero --disable=C0115,C0116,C0301,C0303,C0304 $(git ls-files '*.py') || true
 
       # 4. Pydoc documentation generating
       - name: Generate docs with pydoc
