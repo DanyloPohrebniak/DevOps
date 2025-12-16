@@ -1,6 +1,6 @@
 """Logging for the example app."""
 import logging
-from . import simple_app
+from logging_app import simple_app
 
 logger = logging.getLogger(__name__)
 
