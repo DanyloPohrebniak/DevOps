@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 def main():
     """Handle user logging."""
     logging.basicConfig(
-        filename="./DevOps/logging/myapp.log",
+        filename="./DevOps/logging_app/myapp.log",
         level=logging.INFO,
         format=(
             "%(asctime)s [%(levelname)s] %(name)s: %(lineno)d - %(message)s"
