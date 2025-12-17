@@ -1,7 +1,7 @@
 """Unittests for simple_function from TestClass"""
 
 import unittest
-from unittests.test_class import TestClass
+from unittests.app_test_class import TestClass
 
 class TestFile(unittest.TestCase):
     """Tests for simple_function"""

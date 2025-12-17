@@ -1,7 +1,7 @@
 """Unittests for second_function from TestClass"""
 
 import unittest
-from unittests.test_class import TestClass
+from unittests.app_test_class import TestClass
 
 class TestSecondFunction(unittest.TestCase):
     """Tests for second_function"""
