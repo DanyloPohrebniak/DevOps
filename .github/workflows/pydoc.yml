@@ -44,3 +44,11 @@ jobs:
         with:
           name: pydoc-html
           path: docs/
+          
+      # 6. Build Docker image (packaging)
+      - name: Build Docker image
+        run: docker build -t logging-app-demo .
+
+      # 7. Run Docker container (deploy smoke test)
+      - name: Run Docker container (smoke test)
+        run: docker run --rm logging-app-demo
