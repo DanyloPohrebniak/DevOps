@@ -1,5 +1,6 @@
 """Logging for the example app."""
 import logging
+import os
 from logging_app import simple_app
 
 logger = logging.getLogger(__name__)
@@ -7,6 +8,8 @@ logger = logging.getLogger(__name__)
 
 def main():
     """Handle user logging."""
+    os.makedirs("./DevOps/logging_app", exist_ok=True)
+
     logging.basicConfig(
         filename="./DevOps/logging_app/myapp.log",
         level=logging.INFO,
